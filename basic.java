@@ -25,7 +25,8 @@ public class basic{
         System.out.println(mp.containsKey("naman")); //false
 
         //insert only if key is not present
-        
+        mp.putIfAbsent("rohan",20);
+        System.out.println(mp);
     }
     
 }
