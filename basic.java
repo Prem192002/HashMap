@@ -1,3 +1,4 @@
+import java.security.KeyStore.Entry;
 import java.util.*;
 public class basic{
     public static void main(String[] args) {
@@ -27,6 +28,29 @@ public class basic{
         //insert only if key is not present
         mp.putIfAbsent("rohan",20);
         System.out.println(mp);
+
+        //get all keys in hashmap
+        System.out.println(mp.keySet());
+
+        //get all the values in the hashmap
+        System.out.println(mp.values());
+        
+        //get all the entries in the hash map
+        System.out.println(mp.entrySet());
+
+        //iterating through the hashmap
+            //through keys
+        for(String key : mp.keySet()){
+            System.out.println(key);
+        }
+            //through values
+        for(Integer value : mp.values()){
+            System.out.println(value);
+        }
+            //through all the entries
+        for(Map.Entry<String,Integer> val : mp.entrySet()){
+            System.out.println("My name is"+" "+val.getKey()+" "+"and i am "+" "+val.getValue()+" "+"years old");
+        }
     }
     
 }
