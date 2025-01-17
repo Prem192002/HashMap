@@ -1,6 +1,9 @@
 import java.security.KeyStore.Entry;
 import java.util.*;
 public class basic{
+    class fun{
+
+    }
     public static void main(String[] args) {
         HashMap<String,Integer> mp = new HashMap<>();
         //"put" method
@@ -51,6 +54,7 @@ public class basic{
         for(Map.Entry<String,Integer> val : mp.entrySet()){
             System.out.println("My name is"+" "+val.getKey()+" "+"and i am "+" "+val.getValue()+" "+"years old");
         }
+
     }
     
 }
